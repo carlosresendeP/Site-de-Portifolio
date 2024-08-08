@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root{
+    --cor1:#070705;
+    --cor2:#3e4b51;
+    --cor3:#6f737e;
+    --cor4:#89a09a;
+    --cor5:#c1c0ae;
+    --corwhite: #fff;
+}
+
+
+
+body{
+    background-image: linear-gradient(to left, var(--cor1), var(--cor2), var(--cor3)) ;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+header h1{
+    margin-top: 20px;
+    color: var(--corwhite);
+    text-shadow: 4px 3px 7px #0000004b;
+}
+
+.box-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.box-links .links a{
+    color: var(--corwhite);
+}
+#icon-github:hover{ 
+    color: #6b00a8;
+}
+
+#icon-insta:hover{ 
+    color: #a8007e;
+}
+
+
+section{
+    max-width: 1200px;
+    padding: 2rem 3rem;
+    margin: 0 auto;
+}
+
+.main-container{
+    min-height: 100dvh;
+}
+
+.container-flex{
+    display: flex;
+    align-items: center;
+}
+
+.container-context{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+}
+
+.box-portfolio{
+    background-color: var(--cor2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 250px;
+    height: 350px;
+    box-shadow: 13px 8px 11px #0000009d;
+    border-radius: 10px;
+    transition: linear 0.2s;
+}
+
+
+.box-portfolio:hover{
+    transform: scale(1.03);
+}
+
+.box-portfolio img{
+    width: 100%;
+    max-height: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+#img-3{
+    height: 43%;
+}
+
+.box-portfolio-info{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.box-portfolio-info p{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--cor5);
+}
+
+.box-assets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.box-assets >*:hover{
+    color: #ffae00;
+}
+
+.box-assets img{
+    width: 20px;
+    border: 1px solid var(--corwhite);
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 2px;
+}
+
+
+.box-assets a{
+    color: var(--corwhite);
+    font-size: 0.7rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+
+
+.box-portfolio-info h2{
+    margin-bottom: 10px;
+    color: var(--corwhite);
+    text-shadow: 4px 3px 7px #0000004b;
+}
+
+.box-portfolio-info button{
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding: 6px 20px ; 
+    border: none;
+    border-radius: 5px;
+    font-size:0.9rem;
+    background-color: var(--cor5);
+}
+
+.box-portfolio-info button a{
+    color: var(--cor1);
+    font-weight: 600;
+}
+
+.box-portfolio-info button:hover{
+    background-color: #ffae00;
+    box-shadow: 1px 1px 10px #ffae00;
+    color: var(--cor1);
+}
+
+footer{
+    width: 100%;
+    background-color: var(--cor2);
+    padding: 1rem 1.2rem;
+    text-align: center;
+}
+
+footer p{
+    color: var(--corwhite);
+}
+
+
+@media (max-width: 740px){
+    header{
+        width:100%;
+    }
+
+    section{
+        max-width: 740px;
+        padding: 1rem 0.4rem;
+    }
+
+
+    .container-flex{
+        flex-direction: column;
+        align-items: center;        
+    }
+
+    .container-context{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box-portfolio{
+        box-shadow: 13px 8px 11px #00000048;
+    }
+
+    footer{
+        width: 100%;
+    }
+}
+
+
+
+
+@media (max-width: 430px){
+    header{
+        width:100%;
+    }
+
+    section{
+        max-width: 430px;
+        padding: 1rem 0.4rem;
+    }
+
+
+    .container-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-context{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box-portfolio{
+        box-shadow: 13px 8px 11px #00000048;
+    }
+
+    footer{
+        width: 100%;
+    }
+}
+
