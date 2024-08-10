@@ -89,6 +89,7 @@ section{
     box-shadow: 13px 8px 11px #0000009d;
     border-radius: 10px;
     transition: linear 0.2s;
+    padding: 3px;
 }
 
 
