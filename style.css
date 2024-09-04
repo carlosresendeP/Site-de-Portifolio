@@ -100,10 +100,19 @@ p{
     padding: 3px;
 }
 
-
 .box-portfolio:hover{
     transform: scale(1.03);
     box-shadow: 1px 1px 11px var(--cor5);
+    
+}
+
+.portfolio-shortly{ /* so aparece com projetos recem criados*/
+    background-color: #232a2e;
+    opacity: 0.6;
+    box-shadow: 0px 0px 0px #0000009d;
+}
+.portfolio-shortly:hover{
+    box-shadow: 1px 1px 11px var(--cor1);
 }
 
 .box-portfolio img{
@@ -116,6 +125,11 @@ p{
 #img-3{
     width: 244px;
     height: 142px ;
+}
+
+#thumb-img7{
+    width: 244px;
+    height: 142px;
 }
 
 .box-portfolio-info{
@@ -251,6 +265,11 @@ footer{
 
 footer p{
     color: var(--corwhite);
+}
+footer p:nth-child(2){
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 5px;
 }
 
 
